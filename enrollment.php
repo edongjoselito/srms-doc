@@ -37,18 +37,7 @@
             <div class="content">
 
                 <!-- Topbar Start -->
-                <div class="navbar-custom">
-                    <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
-                        <!-- <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="" height="18">
-                        </span> -->
-                        <h3>School Records Management System</h3>
-                    </a>
-
-                    <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
-
-                    <span class="badge badge-danger float-right mt-1">v5.0.0</span>
-                </div>
+                <?php include('includes/top-bar.php'); ?>
                 <!-- end Topbar -->
 
                 <!-- Start Content-->
@@ -62,13 +51,20 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="p-lg-1">
-                                        <h3 class="mt-0 mb-2 font-weight-bold">Enrollment Procedures</h3>
-                                        <p>Note:<span style="color: red;"> <b>Disregard Step 1 if a student profile already exists.</b></span></p>
+                                        <h3 class="mt-0 mb-2 font-weight-bold">Registrar's Module</h3>
+                                        <img src="assets/images/13.png" width="100%" alt="" class="image-spacing">
+
                                         <hr />
+
+                                    </div>
+
+                                    <div class="p-lg-1">
+                                        <h3 class="mt-0 mb-2 font-weight-bold">Enrollment Procedures</h3>
 
                                         <p>
                                             This page will guide you through the step-by-step process of student enrollment.
                                         </p>
+                                        <p>Note:<span style="color: red;"> <b>Disregard Step 1 if a student profile already exists.</b></span></p>
                                     </div>
 
                                     <div class="p-lg-1 mt-1">
@@ -101,90 +97,78 @@
 
                                         </p>
 
-                                      
+
+
 
                                     </div>
 
                                     <div class="p-lg-1 mt-1">
                                         <h4 class="mt-0 mb-2 font-weight-semibold">Step 2. Enrollment</h4>
-                                        <p>In order to change the width of left side navigation bar, open a file
-                                            <code>src/scss/_variables.scss</code> and change the value of variable
-                                            <code>$leftbar-width</code>. The default value is set to <code>240px</code>.
-                                        </p>
+                                        <p>Note:<span style="color: red;"> <b>Before you perform step 2, make sure you have completed the following:</b></span></p>
+
+                                        <ul>
+                                            <li>Grade Level Setup</li>
+                                            <li>Adviser's Assignments</li>
+                                            <li>Track and Strand for Senior High School</li>
+                                        </ul>
                                     </div>
+
+                                    <img src="assets/images/4.png" alt="" class="image-spacing">
+
+                                    <p>
+                                        Click the <strong>Admission >> Enrollment </strong> menu from the sidebar.
+
+                                    </p>
+
+                                    <p>
+                                        Click the <strong>Enroll New </strong> button. A modal (dialog box) will appear.
+
+                                    </p>
+
+                                    <img src="assets/images/5.png" alt="" class="image-spacing">
+
+                                    <p>
+                                        Fill in the required information. Click the <img src="assets/images/6.png" alt=""> button.
+
+                                    </p>
+
 
                                     <div class="p-lg-1 mt-1">
-                                        <h4 class="mt-0 mb-2 font-weight-semibold">How to change background or menu text color?</h4>
-                                        <p>In order to change the background color, open a file
-                                            <code>src/scss/scss/_variables.scss</code> and change the value of variable
-                                            <code>$bg-leftbar-light</code> the default light value is set to
-                                            <code>#ffffff</code>, <code>$bg-leftbar-dark</code> the default dark value is set to
-                                            <code>#2f353f</code>.
-                                        </p>
+                                        <h4 class="mt-0 mb-2 font-weight-semibold">Step 3. Subject Enlishment</h4>
+                                        <p>Note:<span style="color: red;"> <b>This is the step where you will enroll students in their subjects. Without this, you cannot proceed to encoding the grades.</b></span></p>
 
-                                        <p>
-                                            When you change the background color, you might want to change the color of menu accordingly. To change
-                                            the color of menu item, change the variable <code>$menu-item</code> (Default is set to <code>#70809a</code>).
-                                            Similarly, change the value of variables <code>$menu-item-hover</code> and <code>$menu-item-active</code>.
-                                        </p>
-                                        <p>
-                                            You can change other styles by making modifications in <code>src/scss/custom/structure/_left-menu.scss</code>.
-                                        </p>
-                                    </div>
-
-                                    <div class="row mb-2 mt-4">
-                                        <div class="col">
-                                            <h4 class="mt-0 mb-2 font-weight-semibold">How to use pre-built layouts?</h4>
-                                            <p>
-                                                Each of the layout options is provided below with steps you would need to perform:
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_1.jpg" alt="image" class="img-fluid shadow-sm" />
-                                                <h5 class="font-weight-semibold mt-3">Small Sidebar</h5>
-                                                Keep your body element with class <code>left-side-menu-sm</code> E.g. <code> &lt;body class="left-side-menu-sm"&gt;</code> to have small sidebar.
-                                            </div>
-                                        </div> <!-- end col -->
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_2.jpg" alt="image" class="img-fluid shadow-sm" />
-                                                <h5 class="font-weight-semibold mt-3">Dark Sidebar & Topbar Light</h5>
-                                                Keep your body element with class <code>left-side-menu-dark</code> E.g. <code> &lt;body class="left-side-menu-dark"&gt;</code> to have dark sidebar. Add class <code>topbar-light</code> to have light topnav.
-                                            </div>
-                                        </div> <!-- end col -->
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_3.jpg" alt="image" class="img-fluid shadow-sm" />
-                                                <h5 class="font-weight-semibold mt-3">Collapsed Sidebar</h5>
-                                                Keep your body element with class <code>enlarged</code> and data attribute <code>data-keep-enlarged="true"</code> E.g. <code> &lt;body class="enlarged" data-keep-enlarged="true"&gt;</code> to have collapsed sidebar.
-                                            </div>
-                                        </div> <!-- end col -->
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_4.jpg" alt="image" class="img-fluid shadow-sm" />
-                                                <h5 class="font-weight-semibold mt-3">Boxed Layout</h5>
-                                                Keep your body element with class <code>enlarged boxed-layout</code> and data attribute <code>data-keep-enlarged="true"</code> E.g. <code> &lt;body class="enlarged boxed-layout" data-keep-enlarged="true"&gt;</code> to have boxed layout.
-                                            </div>
-                                        </div> <!-- end col -->
-
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="img-thumbnail p-2 text-center">
-                                                <img src="assets/images/demo/index_5.jpg" alt="image" class="img-fluid shadow-sm" />
-                                                <h5 class="font-weight-semibold mt-3">Unsticky Layout</h5>
-                                                Keep your body element with class <code>unsticky-layout</code> E.g. <code> &lt;body class="unsticky-layout"&gt;</code> to have unsticky layout.
-                                            </div>
-                                        </div> <!-- end col -->
 
                                     </div>
-                                    <!-- end row -->
+
+                                    <img src="assets/images/7.png" alt="" class="image-spacing">
+
+                                    <p>
+                                        Under <strong>Admission</strong> menu, click <strong>Subject Enlishment</strong>.
+
+                                    </p>
+
+                                    <p>
+                                        Click the <strong>Add Student</strong> button.
+
+                                    </p>
+
+                                    <img src="assets/images/8.png" alt="" class="image-spacing">
+
+                                    <p>
+                                        Search for the student you want to enroll in subjects. Click the <strong>Submit</strong> button. The following screen will appear.
+
+                                    </p>
+
+                                    <img src="assets/images/9.png" alt="" width="100%" class="image-spacing">
+                                    <p>
+                                        Click the <strong> Submit </strong> button.
+
+                                    </p>
+
+                                    <p>
+                                        After successfully loading the subjects for the students, you can preview or print the <strong> Certificate of Registration </strong> by clicking any of the two icons <img src="assets/images/11.png" alt=""> in the Action column.
+                                    </p>
+                                    <img src="assets/images/10.png" alt="" width="100%" class="image-spacing">
 
                                 </div>
                             </div>
