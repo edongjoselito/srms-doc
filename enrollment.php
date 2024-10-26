@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Velonic - Admin Dashboard Template</title>
+    <title>SRMS User's Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
@@ -14,7 +14,14 @@
     <!-- App css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-    
+
+    <style>
+        .image-spacing {
+            margin-bottom: 20px;
+            /* Adjust the value as needed */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -32,13 +39,14 @@
                 <!-- Topbar Start -->
                 <div class="navbar-custom">
                     <a href="index.html" class="logo text-center d-none d-md-inline-block mr-2">
-                        <span class="logo-lg">
+                        <!-- <span class="logo-lg">
                             <img src="assets/images/logo-light.png" alt="" height="18">
-                        </span>
+                        </span> -->
+                        <h3>School Records Management System</h3>
                     </a>
 
                     <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
-    
+
                     <span class="badge badge-danger float-right mt-1">v5.0.0</span>
                 </div>
                 <!-- end Topbar -->
@@ -47,109 +55,60 @@
                 <div class="container-fluid">
 
                     <div class="page-wrapper">
-                        <div class="left-sidebar">
-                            <div class="slimscroll-menu">
-                                <div class="list-group list-group-transparent mb-0">
-
-                                    <span class="list-group-item disabled">
-                                        Getting Started
-                                    </span>
-
-                                    <a href="index.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-flag-variant-outline"></i>
-                                        </span>Introduction
-                                    </a>
-
-                                    <a href="setup.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-apps"></i>
-                                        </span>Setup
-                                    </a>
-
-                                    <a href="customization.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-square-edit-outline"></i>
-                                        </span>Customization
-                                    </a>
-
-                                    <a href="plugins-uses.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-widgets"></i>
-                                        </span>How to use plugins
-                                    </a>
-
-                                    <span class="list-group-item disabled">
-                                        Layout
-                                    </span>
-
-                                    <a href="vertical.html" class="list-group-item list-group-item-action active">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-menu"></i>
-                                        </span>Vertical Layouts
-                                    </a>
-
-                                    <a href="horizontal.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-page-layout-sidebar-left"></i>
-                                        </span>Horizontal Layouts
-                                    </a>
-
-                                    <a href="dark.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-briefcase-outline"></i>
-                                        </span>Dark Version
-                                    </a>
-
-                                    <a href="rtl.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-page-layout-sidebar-left"></i>
-                                        </span>RTL Version
-                                    </a>
-
-                                    <span class="list-group-item disabled">
-                                        Other
-                                    </span>
-
-                                    <a href="changelog.html" class="list-group-item list-group-item-action ">
-                                        <span class="mr-2">
-                                            <i class="mdi mdi-book-open-page-variant"></i>
-                                        </span>Changelog
-                                    </a>
-        
-                                </div>
-                            </div>
-                        </div>
+                        <?php include('includes/sidebar.php'); ?>
                         <!-- end left-sidebar-->
 
                         <div class="page-content">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="p-lg-1">
-                                        <h3 class="mt-0 mb-2 font-weight-bold">Vertical Layouts</h3>
-
-                                        <hr/>
+                                        <h3 class="mt-0 mb-2 font-weight-bold">Enrollment Procedures</h3>
+                                        <p>Note:<span style="color: red;"> <b>Disregard Step 1 if a student profile already exists.</b></span></p>
+                                        <hr />
 
                                         <p>
-                                            You can change or customize the left side navigation very easily. Following guide would help you to do that.
+                                            This page will guide you through the step-by-step process of student enrollment.
                                         </p>
                                     </div>
 
                                     <div class="p-lg-1 mt-1">
-                                        <h4 class="mt-0 mb-2 font-weight-semibold">How to add new menu items/change menu items?</h4>
+                                        <h4 class="mt-0 mb-2 font-weight-semibold">Step 1. Adding a Student Profile</h4>
 
                                         <p>
-                                            In order to add, change or remove menu items from the left side navigation, simply edit in file
-                                            <code>src/html/partials/left-sidebar.html</code>. The change would reflect in all the html files automatically. 
-                                            We are using <a href="https://www.npmjs.com/package/gulp-file-include"><code>gulp-file-include</code></a> which would actually take 
-                                            care of including the <code>left-sidebar.html</code> file content in all the html pages.
+                                            From the sidebar menu, click <b> Admission >> Student’s Profile</b>.
+
                                         </p>
+                                        <img src="assets/images/sidebar1.png" alt="" class="image-spacing">
+                                        <p>
+                                            The following window will appear.
+
+                                        </p>
+                                        <img src="assets/images/1.png" alt="" width="100%" class="image-spacing">
+
+                                        <p>
+                                            Click the <img src="assets/images/add-new-button.png"> button.
+
+                                        </p>
+
+                                        <p>
+                                            Type in the student's information.
+
+                                        </p>
+
+                                        <img src="assets/images/2.png" alt="" width="100%" class="image-spacing">
+                                        <p>
+                                            If done, click the <img src="assets/images/3.png"> button at the bottom part.
+
+                                        </p>
+
+                                      
+
                                     </div>
 
                                     <div class="p-lg-1 mt-1">
-                                        <h4 class="mt-0 mb-2 font-weight-semibold">How to change width?</h4>
-                                        <p>In order to change the width of left side navigation bar, open a file 
-                                            <code>src/scss/_variables.scss</code> and change the value of variable 
+                                        <h4 class="mt-0 mb-2 font-weight-semibold">Step 2. Enrollment</h4>
+                                        <p>In order to change the width of left side navigation bar, open a file
+                                            <code>src/scss/_variables.scss</code> and change the value of variable
                                             <code>$leftbar-width</code>. The default value is set to <code>240px</code>.
                                         </p>
                                     </div>
@@ -164,7 +123,7 @@
                                         </p>
 
                                         <p>
-                                            When you change the background color, you might want to change the color of menu accordingly. To change 
+                                            When you change the background color, you might want to change the color of menu accordingly. To change
                                             the color of menu item, change the variable <code>$menu-item</code> (Default is set to <code>#70809a</code>).
                                             Similarly, change the value of variables <code>$menu-item-hover</code> and <code>$menu-item-active</code>.
                                         </p>
@@ -186,7 +145,7 @@
 
                                         <div class="col-lg-4 col-md-6">
                                             <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_1.jpg" alt="image" class="img-fluid shadow-sm"/>
+                                                <img src="assets/images/demo/index_1.jpg" alt="image" class="img-fluid shadow-sm" />
                                                 <h5 class="font-weight-semibold mt-3">Small Sidebar</h5>
                                                 Keep your body element with class <code>left-side-menu-sm</code> E.g. <code> &lt;body class="left-side-menu-sm"&gt;</code> to have small sidebar.
                                             </div>
@@ -194,7 +153,7 @@
 
                                         <div class="col-lg-4 col-md-6">
                                             <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_2.jpg" alt="image" class="img-fluid shadow-sm"/>
+                                                <img src="assets/images/demo/index_2.jpg" alt="image" class="img-fluid shadow-sm" />
                                                 <h5 class="font-weight-semibold mt-3">Dark Sidebar & Topbar Light</h5>
                                                 Keep your body element with class <code>left-side-menu-dark</code> E.g. <code> &lt;body class="left-side-menu-dark"&gt;</code> to have dark sidebar. Add class <code>topbar-light</code> to have light topnav.
                                             </div>
@@ -202,7 +161,7 @@
 
                                         <div class="col-lg-4 col-md-6">
                                             <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_3.jpg" alt="image" class="img-fluid shadow-sm"/>
+                                                <img src="assets/images/demo/index_3.jpg" alt="image" class="img-fluid shadow-sm" />
                                                 <h5 class="font-weight-semibold mt-3">Collapsed Sidebar</h5>
                                                 Keep your body element with class <code>enlarged</code> and data attribute <code>data-keep-enlarged="true"</code> E.g. <code> &lt;body class="enlarged" data-keep-enlarged="true"&gt;</code> to have collapsed sidebar.
                                             </div>
@@ -210,7 +169,7 @@
 
                                         <div class="col-lg-4 col-md-6">
                                             <div class="img-thumbnail p-2 text-center mb-3">
-                                                <img src="assets/images/demo/index_4.jpg" alt="image" class="img-fluid shadow-sm"/>
+                                                <img src="assets/images/demo/index_4.jpg" alt="image" class="img-fluid shadow-sm" />
                                                 <h5 class="font-weight-semibold mt-3">Boxed Layout</h5>
                                                 Keep your body element with class <code>enlarged boxed-layout</code> and data attribute <code>data-keep-enlarged="true"</code> E.g. <code> &lt;body class="enlarged boxed-layout" data-keep-enlarged="true"&gt;</code> to have boxed layout.
                                             </div>
@@ -218,7 +177,7 @@
 
                                         <div class="col-lg-4 col-md-6">
                                             <div class="img-thumbnail p-2 text-center">
-                                                <img src="assets/images/demo/index_5.jpg" alt="image" class="img-fluid shadow-sm"/>
+                                                <img src="assets/images/demo/index_5.jpg" alt="image" class="img-fluid shadow-sm" />
                                                 <h5 class="font-weight-semibold mt-3">Unsticky Layout</h5>
                                                 Keep your body element with class <code>unsticky-layout</code> E.g. <code> &lt;body class="unsticky-layout"&gt;</code> to have unsticky layout.
                                             </div>
@@ -234,7 +193,7 @@
                     </div>
                     <!-- end page-wrapper-->
 
-                    
+
                 </div>
 
             </div>
