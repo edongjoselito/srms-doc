@@ -79,7 +79,13 @@
 
                                     <div class="p-lg-1 mt-1">
                                         <h4 class="mt-0 mb-2 font-weight-semibold">Search for the student for whom you want to create an account.</h4>
-                                       
+                                       <p>
+                                        Note: <span style="color: red";>If you cannot find the student, please ensure the following:</span>
+                                       </p>
+                                       <ul>
+                                        <li>The student has a profile.</li>
+                                        <li>The student does not have an account for the current school year.</li>
+                                       </ul>
                                     </div>
 
                                     <img src="assets/images/16.png" alt="" width="100%" class="image-spacing">
@@ -112,20 +118,7 @@
             </div>
             <!-- content -->
             <!-- Footer Start -->
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            2015 - 2020 © Velonic - by Coderthemes
-                        </div>
-                        <div class="col-md-6">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="http://coderthemes.com/" target="_blank">About</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <?php include('includes/footer.php'); ?>
             <!-- end Footer -->
 
         </div>

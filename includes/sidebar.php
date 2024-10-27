@@ -40,7 +40,7 @@
                                         </span>Enrollment
                                     </a>
 
-                                    <a href="faq-accounting.php" class="list-group-item list-group-item-action ">
+                                    <a href="faq-registrar.php" class="list-group-item list-group-item-action ">
                                         <span class="mr-2">
                                             <i class="mdi mdi-menu"></i>
                                         </span>F A Q

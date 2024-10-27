@@ -52,29 +52,41 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="p-lg-1">
-                                        <h3 class="mt-0 mb-2 font-weight-bold">Accounting Module: Frequenty Asked Questions</h3>
+                                        <h3 class="mt-0 mb-2 font-weight-bold">Registrar's Module: Frequenty Asked Questions</h3>
 
                                         <hr />
 
                                     </div>
 
                                     <div class="p-lg-1 mt-1">
-                                        <h4 class="mt-0 mb-2 font-weight-bold">How to accept payments?</h4>
-
+                                        <h4 class="mt-0 mb-2 font-weight-bold">How to Create a Class Program?</h4>
                                         <p>
-                                            From the Accounting menu, click on Payments. You have two options: Accounts and Services.
+                                            <span style="color: red;">Creating a class program is a task that must be completed each school year by either the registrar or the admin account.</span>
+                                        </p>
+                                        <p>
+                                            From the Configuration menu, click Class Program.
                                         </p>
 
-                                        <img src="assets/images/20.png" alt="" class="image-spacing">
+                                        <img src="assets/images/22.png" alt="" class="image-spacing">
+
+                                        <img src="assets/images/23.png" width="100%" alt="" class="image-spacing">
 
                                         <p>
-                                        <ul>
-                                            <li>
-                                                <span style="color: red;">For payments related to regular students' accounts, click Accounts; otherwise, click Services.</span>
-                                            </li>
-
-                                        </ul>
+                                            Click the <img src="assets/images/24.png" alt="" class="image-spacing"> button. The following screen will appear.
                                         </p>
+
+                                        <img src="assets/images/25.png" width="100%" alt="" class="image-spacing">
+
+                                        <p>
+                                            Select the Year Level and Section.
+                                        </p>
+
+                                        <img src="assets/images/26.png" width="100%" alt="" class="image-spacing">
+
+                                        <p>
+                                            Enter the required information in the Teacher and Class Schedule columns.  Click the <strong>Save</strong> button.
+                                        </p>
+
                                     </div>
 
                                     <!-- <div class="p-lg-1 mt-1">
@@ -117,7 +129,8 @@
             </div>
             <!-- content -->
             <!-- Footer Start -->
-            <?php include('includes/footer.php'); ?>
+             <?php include('includes/footer.php'); ?>
+           
             <!-- end Footer -->
 
         </div>
