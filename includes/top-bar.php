@@ -3,7 +3,7 @@
                         <!-- <span class="logo-lg">
                             <img src="assets/images/logo-light.png" alt="" height="18">
                         </span> -->
-                        <h3>SRMS</h3>
+                        <h3>SRMS User's Guide</h3>
                     </a>
 
                     <button type="button" class="btn btn-sm btn-dark d-inline-block d-lg-none button-menu-mobile">Menu</button>
